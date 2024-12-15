@@ -1,11 +1,14 @@
 .header {
-    background: linear-gradient(#9a14a6, #2200cc) !important;
+    background: linear-gradient(#9a14a6, #2200cc);
 }
 
-/* Styling for the Experience and Education Section */
 #experience-education .border-end {
     border-right: 2px solid #e9ecef;
 }
+#experience-education .col-md-6 {
+    text-align: center; 
+}
+
 
 #experience-education h3 {
     font-weight: bold;
@@ -17,7 +20,6 @@
 }
 
 
-/* Hover animation for cards */
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background-color: #f9f9f9;
@@ -34,19 +36,13 @@
     font-weight: bold;
 }
 
-/* Spacing for list items */
 .card ul li {
     margin-bottom: 5px;
-    text-align: left; /* Align text to the left for better readability */
+    text-align: left; 
     padding-left: 10px;
 }
 
-/* Reduce font size for modules */
 .card ul {
     font-size: 0.95rem;
     line-height: 1.4;
 }
-
-
-
-

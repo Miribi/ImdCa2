@@ -18,7 +18,7 @@ document.getElementById("toggle-experience-education").addEventListener("click",
 
 
 
-document.querySelectorAll('a').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -32,7 +32,7 @@ document.querySelectorAll('.toggle-btn').forEach(button => {
         const icon = this.querySelector('i');
         const isExpanded = this.getAttribute('aria-expanded') === "true";
 
-        // Toggle arrow direction
+        // arrow
         if (isExpanded) {
             icon.classList.remove('fa-chevron-down');
             icon.classList.add('fa-chevron-up');
